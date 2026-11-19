@@ -1,0 +1,209 @@
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #77716B;
+    background-color: #FFFFFF;
+}
+
+h1, h2, h3 {
+    font-family: "Libre Caslon Condensed", serif;
+    font-weight: 400;
+}
+
+a {
+    color: #77716B;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E8E5E1;
+    gap: 25px;
+}
+
+.logo h1 {
+    font-size: 28px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+}
+
+header nav a {
+    font-size: 12px;
+}
+
+
+/* PRESENTACION */
+
+.presentacion {
+    padding: 60px 7% 35px;
+    text-align: center;
+    background-color: #E8E5E1;
+}
+
+.presentacion h2 {
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+.presentacion p {
+    font-size: 14px;
+}
+
+
+/* QUIENES SOMOS */
+
+.quienes-somos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    padding: 35px 7% 65px;
+    background-color: #FFFFFF;
+}
+
+.imagen-nosotros {
+    width: 48%;
+}
+
+.imagen-nosotros img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.texto-nosotros {
+    width: 45%;
+}
+
+.texto-nosotros h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.texto-nosotros p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+/* NUESTRO OBJETIVO */
+
+.objetivo {
+    padding: 55px 7%;
+    background-color: #E8E5E1;
+    text-align: center;
+}
+
+.objetivo h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.objetivo p {
+    font-size: 14px;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 35px 6%;
+    background-color: #FFFFFF;
+}
+
+.logo-footer h2 {
+    font-size: 27px;
+}
+
+.logo-footer p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+footer nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+footer nav a {
+    font-size: 12px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    .quienes-somos {
+        flex-direction: column;
+    }
+
+    .imagen-nosotros,
+    .texto-nosotros {
+        width: 100%;
+    }
+
+    .presentacion h2 {
+        font-size: 38px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .imagen-nosotros img {
+        height: 280px;
+    }
+
+    .presentacion h2 {
+        font-size: 34px;
+    }
+
+    .texto-nosotros h2,
+    .objetivo h2 {
+        font-size: 30px;
+    }
+
+    footer nav ul {
+        justify-content: center;
+    }
+}

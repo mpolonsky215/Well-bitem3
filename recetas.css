@@ -1,0 +1,290 @@
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #77716B;
+    background-color: #FFFFFF;
+}
+
+h1, h2, h3 {
+    font-family: "Libre Caslon Condensed", serif;
+    font-weight: 400;
+}
+
+a {
+    color: #77716B;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E8E5E1;
+    gap: 25px;
+}
+
+.logo h1 {
+    font-size: 28px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 17px;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    font-size: 12px;
+}
+
+
+/* PORTADA */
+
+.portada-recetas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px 7%;
+    background-color: #F4F3F2;
+}
+
+.texto-portada {
+    width: 48%;
+}
+
+.texto-portada h2 {
+    font-size: 46px;
+    margin-bottom: 18px;
+}
+
+.texto-portada p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.imagen-portada {
+    width: 350px;
+    height: 350px;
+}
+
+.imagen-portada img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+/* CATEGORIAS */
+
+.comidas {
+    padding: 45px 7%;
+    background-color: #FFFFFF;
+}
+
+.comidas h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.tipos-comidas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.comida {
+    width: 45%;
+    background-color: #F4F3F2;
+    padding: 15px;
+    text-align: center;
+}
+
+.comida img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.comida h3 {
+    font-size: 26px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+.comida a {
+    display: inline-block;
+    background-color: #77716B;
+    color: #FFFFFF;
+    padding: 10px 22px;
+    font-size: 12px;
+}
+
+
+/* SNACKS */
+
+.snacks {
+    padding: 45px 7%;
+    background-color: #F4F3F2;
+    text-align: center;
+}
+
+.snacks h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.descripcion-snacks {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.lista-snacks {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.snack {
+    width: 30%;
+    background-color: #FFFFFF;
+    padding: 15px;
+}
+
+.snack img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.snack h3 {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.snack p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 35px 6%;
+    background-color: #FFFFFF;
+}
+
+.logo-footer h2 {
+    font-size: 27px;
+}
+
+.logo-footer p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+footer nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+footer nav a {
+    font-size: 12px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    .portada-recetas {
+        flex-direction: column;
+        padding: 30px 7%;
+    }
+
+    .texto-portada {
+        width: 100%;
+    }
+
+    .texto-portada h2 {
+        font-size: 38px;
+    }
+
+    .imagen-portada,
+    .imagen-portada img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .comida {
+        width: 100%;
+    }
+
+    .lista-snacks {
+        flex-wrap: wrap;
+    }
+
+    .snack {
+        width: 45%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .imagen-portada,
+    .imagen-portada img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .comidas h2,
+    .snacks h2 {
+        font-size: 28px;
+    }
+
+    .snack {
+        width: 100%;
+    }
+
+    footer nav ul {
+        justify-content: center;
+    }
+}
